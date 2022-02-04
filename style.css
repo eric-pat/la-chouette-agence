@@ -338,7 +338,7 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
+    margin: 13px 10px 0 0;
     border: 0px;
 }
 
@@ -779,12 +779,12 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #c27956;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #F3976C!important;
     color: #FFFFFF!important;
 }
 
@@ -962,7 +962,7 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
+        max-height: 50px;
         width: auto;
     }
     .nav-invert .navbar-header {
