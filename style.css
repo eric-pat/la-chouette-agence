@@ -870,6 +870,12 @@ h4 {
     max-width: 320px;
 }
 
+/* bloc 5 */
+.text-color {
+    font-size: 19px;
+    position: relative;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
