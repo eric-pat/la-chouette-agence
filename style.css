@@ -674,7 +674,7 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 640px;
     margin: auto auto auto auto;
 }
 
@@ -858,14 +858,16 @@ h4 {
 }
 
 /* bloc 4*/
-.text-size--4 {
-    width: 40%;
+.portfolio-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 .img-center {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 320px;
 }
 
 @media (max-width: 1024px) {
@@ -930,8 +932,17 @@ h4 {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+    .voffset-lg {
+        margin-top: 35px;
+    }
+    .text-size {
+        width: 90%;
+    }
+    .text-size--2 {
+        width: 80%;
+    }
     .text-size--4 {
-        width: 60%;
+        width: 100%;
     }
 }
 
@@ -1072,8 +1083,11 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .text-size {
+        width: 90%;
+    }
     .text-size--4 {
-        width: 60%;
+        width: 93%;
     }
 }
 
