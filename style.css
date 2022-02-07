@@ -885,6 +885,11 @@ h4 {
     color: #000000 !important;
 }
 
+/* bloc 6 */
+.black--2 {
+    color: #2c2a2a !important;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
