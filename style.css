@@ -694,7 +694,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 15px auto 30px auto;
 }
 
 h2 {
@@ -874,6 +874,11 @@ h4 {
 .text-color {
     font-size: 19px;
     position: relative;
+}
+
+/* footer */
+.black {
+    color: #000000 !important;
 }
 
 @media (max-width: 1024px) {
