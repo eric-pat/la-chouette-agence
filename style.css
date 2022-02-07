@@ -565,7 +565,7 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal .modal-dialog img {
-    max-height: 90vh;
+    max-height: 64vh;
     margin: 0 auto;
 }
 
@@ -857,6 +857,17 @@ h4 {
    align-items: center; 
 }
 
+/* bloc 4*/
+.text-size--4 {
+    width: 40%;
+}
+
+.img-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -918,6 +929,9 @@ h4 {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    }
+    .text-size--4 {
+        width: 60%;
     }
 }
 
@@ -1057,6 +1071,9 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    .text-size--4 {
+        width: 60%;
     }
 }
 
