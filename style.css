@@ -831,6 +831,8 @@ h4 {
 .text-size {
     font-size: 21px;
     width: 69%;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .citation {
