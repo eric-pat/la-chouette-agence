@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -302,7 +302,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    height: 60px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -338,7 +338,7 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
+    margin: 13px 10px 0 0;
     border: 0px;
 }
 
@@ -468,13 +468,6 @@ button {
     border-radius: 40px;
 }
 
-.btn-clean {
-    border: 1px solid rgba(0, 0, 0, .08);
-    border-bottom-color: rgba(0, 0, 0, .1);
-    text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
-    box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
-}
-
 .icon-md {
     font-size: 30px!important;
 }
@@ -516,7 +509,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -572,7 +565,7 @@ a[data-lightbox]:hover img {
 }
 
 #lightbox-modal .modal-dialog img {
-    max-height: 90vh;
+    max-height: 64vh;
     margin: 0 auto;
 }
 
@@ -681,7 +674,7 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 640px;
     margin: auto auto auto auto;
 }
 
@@ -701,7 +694,9 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 15px auto 30px auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 h2 {
@@ -779,13 +774,15 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #2c2a2a;
+    color: #F3976C!important;
+    border: #2c2a2a solid 2px;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #000000!important;
+    color: #F3976C!important;
+    border-color:  #F3976C!important ;
 }
 
 .ltc-white {
@@ -818,11 +815,85 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
+}
+
+/* modification version accessibility and seo */
+
+/* bloc 2 */
+.text-change {
+    display: flex;
+    justify-content: center;
+}
+
+.text-size {
+    font-size: 21px;
+    width: 69%;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.citation {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-size--2 {
+    width: 88%;
+    font-style: italic;
+    color: black !important;
+    margin: 0;
+}
+
+.text-size--3 {
+    font-size: 14px;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+/* bloc 3*/
+.text-align {
+   flex-direction: column;
+   align-items: center; 
+}
+
+/* bloc 4*/
+.portfolio-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+}
+
+/* bloc 5 */
+.text-color {
+    font-size: 19px;
+    position: relative;
+}
+
+/* footer */
+.black {
+    color: #000000 !important;
+}
+
+/* bloc 6 */
+.black--2 {
+    color: #2c2a2a !important;
 }
 
 @media (max-width: 1024px) {
@@ -848,18 +919,18 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+} */
+
+/* @media only screen and (min-width: 1024px) and (max-width: 1366px) and (min-resolution: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
+ */
 @media (max-width: 991px) {
     .container {
         width: 100%;
@@ -872,20 +943,32 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
+   /*  .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
-    }
+    } */
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
     }
-    .bloc-fill-screen .fill-bloc-top-edge,
+/*     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
+    } */
+    .voffset-lg {
+        margin-top: 35px;
+    }
+    .text-size {
+        width: 90%;
+    }
+    .text-size--2 {
+        width: 80%;
+    }
+    .text-size--4 {
+        width: 100%;
     }
 }
 
@@ -962,7 +1045,7 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
+        max-height: 50px;
         width: auto;
     }
     .nav-invert .navbar-header {
@@ -1025,6 +1108,12 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    .text-size {
+        width: 90%;
+    }
+    .text-size--4 {
+        width: 93%;
     }
 }
 
