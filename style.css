@@ -884,6 +884,7 @@ h4 {
 .text-color {
     font-size: 19px;
     position: relative;
+    font-weight: 700;
 }
 
 /* footer */
