@@ -639,7 +639,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #333333!important;
 }
 
 .container {
@@ -665,7 +665,7 @@ a {
 }
 
 p {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .tight-width-whitespace {
@@ -888,6 +888,9 @@ h4 {
 /* footer */
 .black {
     color: #000000 !important;
+}
+.hover-1 :hover{
+    color:white;
 }
 
 /* bloc 6 */
