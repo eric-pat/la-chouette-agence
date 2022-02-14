@@ -90,11 +90,6 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.webp");
-    background-size: 280px 280px;
-}
-
 .b-parallax {
     background-attachment: fixed;
 }
@@ -865,6 +860,9 @@ h4 {
 .text-align {
    flex-direction: column;
    align-items: center; 
+}
+.new-background {
+    background-color: #F3976C;
 }
 
 /* bloc 4*/
